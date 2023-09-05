@@ -35,6 +35,9 @@
 -   TMDB IMG URL
 -   Made the Browse page amazing with Tailwind
 -   Created Custom Hook for Movies and Series
+-   GPT search Page
+-   GPT Search bar
+-   Multi-language feature in our App
 
 # Features:
 
