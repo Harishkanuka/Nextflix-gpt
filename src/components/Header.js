@@ -55,15 +55,15 @@ const Header = () => {
         dispatch(changeLanguage(e.target.value));
     };
     return (
-        <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+        <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
             <img
-                className="w-44"
+                className="w-44 mx-auto md:mx-0"
                 src={LOGO}
                 alt="Netflix_Logo"
             />
 
             {user && (
-                <div className="flex p-2 ">
+                <div className="flex p-2 justify-between">
                     {showGptSearch && (
                         <select
                             className="bg-blue-400 py-2 px-2 cursor-pointer  m-3 indent-0 hover:bg-blue-300  rounded-lg font-semibold "
@@ -83,7 +83,7 @@ const Header = () => {
                         {showGptSearch ? "Home🔙" : "GPT Search🔍"}
                     </button>
                     <img
-                        className="w-12 h-12  m-3 cursor-pointer rounded "
+                        className="hidden md:inline-block w-12 h-12  m-3 cursor-pointer rounded "
                         src={user?.photoURL}
                         alt="profile_icon"
                     />
