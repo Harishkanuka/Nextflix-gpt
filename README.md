@@ -38,6 +38,9 @@
 -   GPT search Page
 -   GPT Search bar
 -   Multi-language feature in our App
+-   Created a env file
+-   Implemented Memoization to avoid mutiple API calls
+-
 
 # Features:
 

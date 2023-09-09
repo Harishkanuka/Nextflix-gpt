@@ -12,7 +12,7 @@ const VideoBackground = ({ movieId }) => {
                 src={
                     "https://www.youtube.com/embed/dG91B3hHyY4?" +
                     trailerVideo?.key +
-                    "?&autoplay=&mute="
+                    "?&autoplay=1&mute="
                 }
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>

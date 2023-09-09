@@ -7,12 +7,12 @@ export const BG_IMG =
 export const USER_AVATAR =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJ8NBJb8kWNV6Su2iSpMvvz7_YnnEWnmJ2g&usqp=CAU";
 
+console.log("TMDB API " + process.env.REACT_APP_TMDB_KEY);
 export const API_OPTIONS = {
     method: "GET",
     headers: {
         accept: "application/json",
-        Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MzI4NjMzZWRiZTEyOWQzODNlZWU5YzY3Y2UyYjFmMyIsInN1YiI6IjY0ZjQwMjM0M2Q0M2UwMDBjNGE4YzJhMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jYkMCbIeHJHG6EwXnbiYIUxYlrPkFrAjlZMY8DmwUtQ",
+        Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
     },
 };
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w400";
@@ -22,3 +22,4 @@ export const SUPPORTED_LANGUAGES = [
     { identifier: "hindi", name: "Hindi" },
     { identifier: "spanish", name: "Spanish" },
 ];
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;

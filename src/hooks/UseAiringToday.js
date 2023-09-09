@@ -1,10 +1,11 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import { useEffect } from "react";
 import { addAriringToday } from "../utils/seriesSlice";
 
 const useAiringToday = () => {
     const dispatch = useDispatch();
+    const airingToday = useSelector((store) => store.series.airingToday);
     //Fetch Data from TMDB API and Update the store
     const getAiringToday = async () => {
         const data = await fetch(
@@ -16,7 +17,7 @@ const useAiringToday = () => {
         dispatch(addAriringToday(json.results));
     };
     useEffect(() => {
-        getAiringToday();
+        !airingToday && getAiringToday();
     }, []);
 };
 
