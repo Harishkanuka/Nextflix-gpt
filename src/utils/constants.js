@@ -7,7 +7,6 @@ export const BG_IMG =
 export const USER_AVATAR =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOJ8NBJb8kWNV6Su2iSpMvvz7_YnnEWnmJ2g&usqp=CAU";
 
-console.log("TMDB API " + process.env.REACT_APP_TMDB_KEY);
 export const API_OPTIONS = {
     method: "GET",
     headers: {
