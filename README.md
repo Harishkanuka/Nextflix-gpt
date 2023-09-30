@@ -10,7 +10,7 @@ This React application combines cutting-edge technology with user-friendly featu
 
 -   # Sign Up and Sign In Forms
 -   Developed user-friendly forms for account creation and sign-in.
-    Implemented form validation to ensure data integrity.
+-   Implemented form validation to ensure data integrity.
     -   # Firebase Integration
 -   Configured Firebase for user authentication and data management.
     Created user accounts securely using Firebase services.
@@ -18,12 +18,12 @@ This React application combines cutting-edge technology with user-friendly featu
     -   # User Profile Management
 
 -   Added functionality for users to update their profiles.
-    Resolved issues related to user display names and profile picture updates.
+-   Resolved issues related to user display names and profile picture updates.
 
     -   # Authentication Handling
 
 -   Implemented user redirection based on authentication status.
-    Ensured non-logged-in users are redirected to the login page, and vice-versa.
+-   Ensured non-logged-in users are redirected to the login page, and vice-versa.
 
     -   # Unsubscription to onAuthStateChanged Callback
 
