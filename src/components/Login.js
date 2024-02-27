@@ -16,9 +16,9 @@ const Login = () => {
     const dipatch = useDispatch();
     //State variable for Error message
     const [errorMessage, setErrorMessage] = useState(null);
-    const [isSignInForm, setIsSignInFrom] = useState(true);
+    const [isSignInForm, setIsSignInForm] = useState(true);
     const toggleSignInForm = () => {
-        setIsSignInFrom(!isSignInForm);
+        setIsSignInForm(!isSignInForm);
     };
 
     const email = useRef(null);
